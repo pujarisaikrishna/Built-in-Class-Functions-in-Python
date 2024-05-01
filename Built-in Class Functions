@@ -1,0 +1,18 @@
+class student:
+    def __init__(self,rno,name,age):
+        self.rno = rno
+        self.name = name
+        self.age = age
+
+    def dispaly(self):
+        print("roll no:",self.rno)
+        print("name:", self.name)
+        print("age:", self.age)
+
+obj1std = student(100,"krishna",22)
+print(getattr(obj1std,"name"))
+setattr(obj1std,"name","Joseph kent")
+print(obj1std.name)
+delattr(obj1std,"name")
+print(hasattr(obj1std,"name"))
+print(hasattr(obj1std,"rno"))
